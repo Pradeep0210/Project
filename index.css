@@ -1,0 +1,516 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+body{
+    background-color:#00050d;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    background-color: #00050d;
+    position: fixed;
+}
+.child1{
+    height: 60px;
+    /* width: 100%; */
+    margin-top: 10px;
+    background-color:transparent;
+    color: white;
+    display: flex;
+}
+.child1 h3{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.child1 button{
+    height: 45px;
+    font-size: 16px;
+    font-weight:bolder;
+    color: white;
+    margin-left: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.cls1, .cls2{
+    width: 70px;
+}
+.cls3, .cls4, .cls5{
+    width: 80px;
+}
+.cls6{
+    width: 100px;
+}
+.child1 button:hover{
+    background-color: white;
+    font-weight: normal;
+    color: black;
+    cursor: pointer;
+}
+.child1 .cls5:hover{
+    background-color: rgb(12, 161, 211);
+}
+.navbar .child2{
+    margin-top: 10px;
+    margin-left: 150px;
+    padding-left: 40px;
+    height: 60px;
+}
+.child2 button{
+    height: 45px;
+    font-weight:bolder;
+    font-size: 18px;
+    color: white;
+    margin-left: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.cls7, .cls9, .cls10{
+    width: 45px;
+}
+.cls8{
+    width: 70px;
+}
+.child2 .cls11{
+    width: 100px;
+    background-color:rgb(12, 161, 211) ;
+    cursor: pointer;
+}
+
+.child2 .cls8:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.child2 .cls7:hover{
+    border-radius: 50%;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+.child2 .cls9:hover{
+    border-radius: 50%;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+.child2 .cls10:hover{
+    border-radius: 50%;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+@media screen and(max-width:1200px) {
+    .child1{
+        display: flex;
+    }
+    .child2{
+        display: none;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .child1{
+        display:grid;
+        grid-template-columns: repeat(7,1fr);
+        gap: 10px;
+    }
+    .child2 button{
+        display: none;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .child1{
+        display:grid;
+        grid-template-columns: repeat(7,1fr);
+        gap: 5px;
+    }
+    .child2{
+        display: none;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px) {
+    .child1{
+        display:grid;
+        grid-template-columns: repeat(7,1fr);
+        gap: 3px;
+    }
+    .child2{
+        display: none;
+    }
+}
+@media screen and (max-width:575px) {
+    .child1 button{
+        display:none;
+    }
+    .child2{
+        display: none;
+    }
+    .child1 h3{
+        margin-left: 200px;
+    }
+}
+@media screen and(max-width:1200px) {
+    .images{
+        height: 500px;
+        width: 100%;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .images{
+        height: 450px;
+        width: 100%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .images{
+        height: 400px;
+        width: 100%;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px) {
+    .images{
+        height: 350px;
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:575px) {
+    .images{
+        height: 300px;
+        width: 100%;
+    }
+}
+.oscar_movies{
+    margin-top: 30px;
+}
+.images2{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+@media screen and(max-width:1200px) {
+    .images2{
+        display: flex;
+    }
+    .images{
+        display: none;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .images2{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+    }
+    .images{
+        display: none;
+    }
+    .oscar_movies{
+        padding-top: 100px;
+    }
+    
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .images2{
+        display: grid;
+        grid-template-columns:repeat(2,1fr) ;
+        margin-left: 50px;
+        gap: 10px;
+    }
+    .images{
+        display: none;
+    }
+    .oscar_movies{
+        padding-top: 100px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px) {
+    .images2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+        margin-left: 150px;
+    }
+    .images{
+        display: none;
+    }
+    .oscar_movies{
+        padding-top: 100px;
+    }
+
+}
+@media screen and (max-width:575px) {
+    .images2{
+        display: block;
+        margin-left: 70px;
+    }
+    .images{
+        display: none;
+    }
+    .oscar_movies{
+        padding-top: 100px;
+    }
+}
+.oscar_movies a{
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+.images img{
+    margin-top: 70px;
+    height: 550px;
+    width: 100%;
+    background: linear-gradient(250deg,black);
+}
+
+.box{
+    margin-left: 15px;
+    margin-top: 10px;
+    height: 200px;
+    width: 310px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: white;
+    overflow: hidden;
+    
+}
+.img{
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+.box:hover{
+    height: 330px;
+    width: 320px;
+    box-shadow: 10px 10px 10px gray;
+    cursor: pointer;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+}
+/* .img:hover{
+    height: 220px;
+    width: 325px;
+} */
+.Top_Movies{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.images3{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+@media screen and(max-width:1200px) {
+    .images3{
+        display: flex;
+    }
+    .images{
+        display: none;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .images3{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        
+    }
+    .images{
+        display: none;
+    }
+    .Top_Movies{
+        padding-top: 100px;
+    }
+    
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .images3{
+        display: grid;
+        grid-template-columns:repeat(2,1fr) ;
+        gap:10px;
+        margin-left: 50px;
+    }
+    .images{
+        display: none;
+    }
+    .Top_Movies{
+        padding-top: 100px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px) {
+    .images3{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+        margin-left:150px ;
+    }
+    .images{
+        display: none;
+    }
+    .Top_Movies{
+        padding-top: 100px;
+    }
+
+}
+@media screen and (max-width:575px) {
+    .images3{
+        display: block;
+        margin-left: 70px;
+    }
+    .images{
+        display: none;
+    }
+    .Top_Movies{
+        padding-top: 100px;
+    }
+}
+.Mystery_Movies{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.images4{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+@media screen and(max-width:1200px) {
+    .images4{
+        display: flex;
+    }
+    .images{
+        display: none;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .images4{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+    }
+    .images{
+        display: none;
+    }
+    .Mystery_Movies{
+        padding-top: 100px;
+    }
+    
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .images4{
+        display: grid;
+        grid-template-columns:repeat(2,1fr) ;
+        gap: 10px;
+        margin-left: 50px;
+    }
+    .images{
+        display: none;
+    }
+    .Mystery_Movies{
+        padding-top: 100px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px) {
+    .images4{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+        margin-left: 150px;
+    }
+    .images{
+        display: none;
+    }
+    .Mystery_Movies{
+        padding-top: 100px;
+    }
+
+}
+@media screen and (max-width:575px) {
+    .images4{
+        display: block;
+        margin-left: 70px;
+    }
+    .images{
+        display: none;
+    }
+    .Mystery_Movies{
+        padding-top: 100px;
+    }
+}
+
+footer{
+    height: 300px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    /* padding-left: 550px; */
+}
+footer img{
+    margin-left: 550px;
+}
+footer ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 460px;
+}
+footer li{
+    padding-left: 20px;
+}
+@media screen and(max-width:1200px) {
+    footer{
+        height: 500px;
+        width: 100%;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1199px) {
+    footer{
+        height: 450px;
+        width: 100%;
+    }
+    footer img{
+        margin-left: 400px;
+    }
+    footer ul{
+        margin-left: 300px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    footer{
+        height: 400px;
+        width: 100%;
+    }
+    footer img{
+        margin-left: 350px;
+    }
+    footer ul{
+        margin-left: 250px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px) {
+    footer{
+        height: 350px;
+        width: 100%;
+    }
+    footer img{
+        margin-left: 300px;
+    }
+    footer ul{
+        margin-left:200px ;
+    }
+}
+@media screen and (max-width:575px) {
+    footer{
+        height: 300px;
+        width: 100%;
+    }
+    footer img{
+        margin-left: 150px;
+    }
+    footer ul{
+       margin-left: 30px;
+    }
+}

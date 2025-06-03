@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #00050d;
+}
+.box{
+    height: 300px;
+    width: 100%;
+    border: 1px solid transparent;
+}
+.Top_Movies h1{
+    color:white ;
+}
+.video1 {
+    display: flex;
+}
+p{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: larger;
+    color: white;
+    text-align: justify;
+}
+.video2{
+    display: flex;
+}
+.video3{
+    display: flex;
+}
+.video4{
+    display: flex;
+}
